@@ -9,7 +9,8 @@ module.exports = (req, res) => {
   }
   
   // Replace "myapp" with your actual custom URI scheme
-  const redirectTo = `myapp://auth?code=${encodeURIComponent(code)}${state ? `&state=${encodeURIComponent(state)}` : ''}`;
+ const redirectTo = `myapp://(tabs)/home?code=${encodeURIComponent(code)}`;
+
   console.log('Redirecting to:', redirectTo);
   
   // Issue a 302 redirect
