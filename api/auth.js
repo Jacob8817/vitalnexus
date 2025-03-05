@@ -9,7 +9,8 @@ module.exports = (req, res) => {
   }
   
   // Replace "myapp" with your actual custom URI scheme
- const redirectTo = `myapp://(tabs)/home?code=${encodeURIComponent(code)}`;
+const redirectTo = `exp://192.168.1.106:8081/--/(tabs)/home?code=${encodeURIComponent(code)}`;
+
 
   console.log('Redirecting to:', redirectTo);
   
